@@ -160,9 +160,10 @@ README.md   Vagrantfile puppet
 
 corremos entonces los siguientes comandos dentro de nuestra consola vagrant
 
+$ rvm install ruby 2.1.2
+
 $ rvm use 2.1.2@gema --create --default
 
 $ gem update --system 
 
 $ gem install rails --version 4.0.5 
-
