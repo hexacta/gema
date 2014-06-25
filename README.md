@@ -160,6 +160,8 @@ README.md   Vagrantfile puppet
 
 corremos entonces los siguientes comandos dentro de nuestra consola vagrant
 
+$ vagrant ssh
+
 $ rvm install ruby 2.1.2
 
 $ rvm use 2.1.2@gema --create --default
