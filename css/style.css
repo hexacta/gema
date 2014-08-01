@@ -1,0 +1,154 @@
+@CHARSET "ISO-8859-1";
+html, body { height: 100%; }
+body {
+	background: #4CDEC5;
+	color: #FFFFA7;
+	text-align: center;
+}
+#normal div {
+	width: 100%;
+	margin: 0 auto;
+	text-transform: lowercase;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1024px;
+	height: auto;
+	top: 50%;
+}
+#faltan {
+	font-family: 'Megrim', cursive;
+	padding-bottom: 21px;
+}
+#contador {
+	font-family: 'Abril Fatface', cursive;
+	padding-bottom: 43px;
+}
+#dias {
+	font-family: 'Megrim', cursive;
+	margin-top: 0px;
+}
+#separador {
+	height: 71px;
+	font-family: 'Megrim', cursive;
+	line-height: 71px;
+	white-space: nowrap;
+	margin-bottom: 11px;
+}
+#separador img {
+	vertical-align: middle;
+	margin-top: 8px;
+}
+#fecha, #fecha2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase!important;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+#fecha2 { margin-top: 100px; }
+#motivo {
+	width: 40%!important;
+}
+#motivo, #motivo2 {
+	font-family: 'Josefin Slab', serif;
+	text-transform: uppercase!important;
+	margin-top: 0px;
+}
+#feriado img {
+	margin-top: 32px;
+}
+
+#social {
+	float: right;
+	width: 95%;
+	margin-top: -50px;
+}
+#social .fb-like { float: left; }
+#social .twitter-share-button { float: right; }
+
+/* Country menu
+.country {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-top: 44px;
+	position: absolute;
+	left: 50%;
+}
+.country li {
+	display: inline-block;
+}
+.country li a {
+	display: block;
+	width: 66px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-family: 'Vast Shadow', arial;
+	font-size: 10px;
+	text-decoration: none;
+	color: inherit;
+}
+.country li.selected {
+	border-left: 2px solid #FFFFA7;
+	border-top: 2px solid #FFFFA7;
+	border-right: 2px solid #FFFFA7;
+}
+*/
+
+/* Flechas */
+.flechas {
+	position: absolute;
+	width: 36px!important;
+	height: 187px!important;
+	top: 50%;
+	margin-top: -130px!important;
+	background-image: url(flechas.png?v2013);
+	cursor: pointer;
+}
+
+.flechas.izquierda {
+	display: none;
+	left: 10px;
+}
+
+.flechas.derecha {
+	right: 10px;
+	background-position: -36px 0;
+}
+
+/* Mobile */
+.mobile {
+	position: absolute;
+	display: none;
+	width: 651px;
+	height: 79px;
+	left: 50%;
+	margin-left: -325px;
+	bottom: 0;
+	background-image: url(mobile_frame.png?v2013);
+}
+
+.mobile ul li {
+	list-style-type: none;
+	float: left;
+	padding-top: 8px;
+}
+
+.mobile ul li a {
+	display: block;
+	width: 120px;
+	height: 40px;
+	background-image: url(mobile.png?v2013);
+}
+
+.mobile ul li a.google {
+	background-position: -120px 0;
+	margin: 0 100px;
+}
+
+.mobile ul li a.blackberry {
+	background-position: -240px 0;
+}
