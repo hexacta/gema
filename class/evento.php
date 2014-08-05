@@ -23,7 +23,6 @@ class Evento {
         
 		}
 		
-		mysql_close($db);
 	}
 	
 	function getDaysNextEvent(){
