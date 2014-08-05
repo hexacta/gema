@@ -22,9 +22,9 @@ if($query->num_rows > 0) {
 	if($row["password"] == $password){
 		session_start();
 		$_SESSION['usuario'] = $row["usuario"];
-  		header("Location: crear_evento.php");
+  		header("Location: ../crear_evento.php");
 	} else {
-		header("Location: login.php?pass=false");
+		header("Location: ../login.php?pass=false");
 	}
 	
 } else {

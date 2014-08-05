@@ -11,7 +11,7 @@ var myAppModule = angular.module('myApp', [])
                 //usaremos el metodo POST para enviar los datos
                 method: 'POST', 
                 //seleccionamos a  que URL llegara la informacion
-                url: 'upload_usuario.php',
+                url: 'scripts/upload_usuario.php',
                 //codificamos el contenido
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 //esta es la informacion que vamos a mandar

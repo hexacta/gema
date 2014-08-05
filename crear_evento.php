@@ -70,7 +70,7 @@ if (!(isset($_SESSION['usuario']) && $_SESSION['usuario'] != '')) {
    
     <div  class="container">
       <h1>Crear evento</h1>
-      <form id="uploadForm" method="post" action="upload_evento.php" enctype="multipart/form-data">
+      <form id="uploadForm" method="post" action="scripts/upload_evento.php" enctype="multipart/form-data">
       	 <div class="form-group">
 		   <label for="nombre">Nombre del evento</label>
 		   <input type="text" class="form-control" id="nombre" name="nombre" required/>
@@ -90,9 +90,10 @@ if (!(isset($_SESSION['usuario']) && $_SESSION['usuario'] != '')) {
 			<label for="fecha">Fecha</label>
 		  	<input type="text" class="form-control" id="datepicker" name="fecha" required />
 		</div>
-		   
+		 <div style="margin-bottom:10px;"><?php if(isset($_GET['event']) && $_GET['event'] == 'ok') { echo "¡Evento creado con éxito!"; } ?></div>   
          <input type="submit"  name="submit"class="btn btn-primary"></input>      
       </form>
+      
     </div>
    </body>
 </html>
