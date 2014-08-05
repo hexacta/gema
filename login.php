@@ -17,7 +17,7 @@
    <body>
     <div  class="container">
       <h1>Login</h1>
-		<form id="login" action="validar_usuario.php" method="post">
+		<form id="login" action="scripts/validar_usuario.php" method="post">
 		
 		 <div class="form-group">
 		   <label for="user">Nombre</label>
@@ -33,7 +33,7 @@
 		</form>
 			
 		<div style="text-align:center; width: 225px; font-size:12px; margin-top:10px;">
-			<a href="#">Recuperar contraseña</a> | <a href="scripts/crear_usuario.php">Crear usuario</a>
+			<a href="#">Recuperar contraseña</a> | <a href="crear_usuario.php">Crear usuario</a>
 		</div>	
 	</div>
 

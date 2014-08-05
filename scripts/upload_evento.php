@@ -19,6 +19,9 @@ try {
 	/* commit transaction */
 	mysqli_commit($db);
 	
+	header("Location: ../crear_evento.php?event=ok");
+
+	
 } catch (Exception $e) {
 	
     mysqli_rollback($db);
