@@ -27,10 +27,12 @@ class Evento {
 	
 	function getDaysNextEvent(){
 		
-		$datetime1 = new DateTime(date("Y-m-d H:i:s"));
+		
+		$datetime1 = new DateTime(date("Y-m-d"));
 		$datetime2 = new DateTime($this->fecha);
 	 			
 		$interval = $datetime1->diff($datetime2);
+		
 		echo $interval->format('%a');
 	}
 	
@@ -39,14 +41,16 @@ class Evento {
 			
 			$fecha = new DateTime($this->fecha);
 			$f = explode("-", $fecha->format("d-m-Y"));; 
-		
-			echo $this->getDiaSemana() ." ". date('d', $this->fecha) . " de " . $this->getMes();
+
+			$day = date("w", mktime(0, 0, 0, $f[0], $f[1], 2014));
+					
+			echo $this->getDiaSemana($day) ." ". $f[0] . " de " . $this->getMes();
 		
 	}
 	
-	function getDiaSemana(){
+	function getDiaSemana($day){
 		
-		switch ($f[0]){
+		switch ($day){
 			 case 0:
 		        $dds = "Domingo";
 		        break;
